@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Miasto Gdynia"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="Dodaj ciekawe miejsce:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/text_uzytkownika"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Twoje miejsce" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="dodaj"
+        android:text="Dodaj"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lista_atrakcji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher" />
+
+</LinearLayout>
